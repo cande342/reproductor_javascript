@@ -1,0 +1,118 @@
+html{
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+}
+
+.container {
+    width: 100%; 
+    height: auto; 
+    margin: 2rem 0; 
+    padding: 10px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .caja {
+    border: 1px solid black;
+    padding: 10px; 
+    border-radius: 5px; 
+    background-color: #002542;
+    width: 70%; 
+  }
+  
+  .listado-canciones {
+    width: 100%; 
+  }
+  
+  .cancion {
+    padding: 1rem 0; 
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    
+  }
+  .titulo{
+    flex:6;
+}
+.play, .stop, .descargar{
+    flex: 1;
+    cursor: pointer;
+}
+
+.volumen{
+    width: 100%;
+}
+
+a{
+    color: initial;
+    text-decoration: none;
+}
+p{
+    margin-bottom: 0%;
+}
+.subtitulo{
+    font-size: smaller;
+    padding-top: 0%;
+    margin-top: 0%;
+}
+
+@media only screen and (min-width: 660px){
+
+.container{
+    width: 30vw;
+    height: 100vh;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.caja{
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 5%;
+    background-color: #002542;
+
+}
+.listado-canciones{
+    width: 100%;
+    
+}
+.cancion{
+    padding: 1rem 0rem;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.titulo{
+    flex:6;
+}
+.play, .stop, .descargar{
+    flex: 1;
+    cursor: pointer;
+}
+
+.volumen{
+    width: 100%;
+}
+
+a{
+    color: initial;
+    text-decoration: none;
+}
+p{
+    margin-bottom: 0%;
+}
+.subtitulo{
+    font-size: smaller;
+    padding-top: 0%;
+    margin-top: 0%;
+}
+
+}

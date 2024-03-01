@@ -1,11 +1,69 @@
-html{
-    font-family: 'Poppins', sans-serif;
-    background-color: black;
-}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(135deg, rgba(0, 128, 0, 0.5), rgba(0, 0, 128, 0.5));
+    height: 100vh;
+  }
+
+  #gallery-container {
+    overflow-x: scroll;
+  }
+
+  #gallery {
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    
+
+  }
+
+  .image {
+    flex: 0 0 auto;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  #gallery-container {
+    width: 80%; /* O ajusta a un valor específico según tus necesidades */
+    margin: 0 auto;
+    height: auto; /* Ajusta a auto o un valor específico según tus necesidades */
+    overflow-x: hidden; /* Evita que aparezca la barra de desplazamiento horizontal */
+    overflow-y: hidden; /* Evita que aparezca la barra de desplazamiento vertical */
+    position: relative;
+  }
+  
+  .arrow {
+    font-style: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+  }
+  
+  .arrow-left {
+    left: 0px;
+    
+  }
+  
+  .arrow-right {
+    right: 0px;
+    
+  }
+
+  .arrow:hover {
+    cursor: pointer;
+    color: grey; /* Cambia el color al pasar el mouse, ajusta según tus preferencias */
+  }
+
 
 .container {
     width: 100%; 
-    height: auto; 
+    height: auto;
     margin: 2rem 0; 
     padding: 10px; 
     display: flex;
@@ -15,11 +73,9 @@ html{
   }
   
   .caja {
-    border: 1px solid black;
     padding: 10px; 
     border-radius: 5px; 
-    background-color: #002542;
-    width: 70%; 
+    width: 50%; 
   }
   
   .listado-canciones {
@@ -40,9 +96,8 @@ html{
     flex: 1;
     cursor: pointer;
 }
-
 .volumen{
-    width: 100%;
+    width: 50%;
 }
 
 a{
@@ -58,61 +113,4 @@ p{
     margin-top: 0%;
 }
 
-@media only screen and (min-width: 660px){
 
-.container{
-    width: 30vw;
-    height: 100vh;
-    margin: 2rem auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-}
-
-.caja{
-    border: 1px solid black;
-    padding: 20px;
-    border-radius: 5%;
-    background-color: #002542;
-
-}
-.listado-canciones{
-    width: 100%;
-    
-}
-.cancion{
-    padding: 1rem 0rem;
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-}
-.titulo{
-    flex:6;
-}
-.play, .stop, .descargar{
-    flex: 1;
-    cursor: pointer;
-}
-
-.volumen{
-    width: 100%;
-}
-
-a{
-    color: initial;
-    text-decoration: none;
-}
-p{
-    margin-bottom: 0%;
-}
-.subtitulo{
-    font-size: smaller;
-    padding-top: 0%;
-    margin-top: 0%;
-}
-
-}
